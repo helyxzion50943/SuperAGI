@@ -9,4 +9,6 @@ for tool in /app/superagi/tools/* /app/superagi/tools/external_tools/* /app/supe
     echo "Installing requirements for tool: $(basename "$tool")"
     pip install -r "$tool/requirements.txt"
   fi
+
+  wait-for-it.sh
 done

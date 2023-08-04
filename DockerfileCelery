@@ -30,3 +30,4 @@ RUN ./install_tool_dependencies.sh
 
 
 CMD ["celery", "-A", "superagi.worker", "worker", "--beat","--loglevel=info"]
+wait-for-it.sh
